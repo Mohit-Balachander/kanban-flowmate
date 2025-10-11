@@ -2,78 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Advanced Project Management Design System */
+/* Kanban FlowMate Design System */
 @layer base {
   :root {
     /* Core Brand Colors */
     --background: 250 100% 99%;
     --foreground: 225 15% 20%;
-    
+
     /* Primary Brand - Professional Blue */
     --primary: 217 91% 60%;
     --primary-foreground: 0 0% 100%;
     --primary-light: 217 91% 85%;
     --primary-dark: 217 91% 45%;
-    
+
     /* Secondary - Modern Purple */
     --secondary: 259 94% 51%;
     --secondary-foreground: 0 0% 100%;
     --secondary-light: 259 94% 85%;
-    
+
     /* Accent - Vibrant Teal */
     --accent: 174 72% 56%;
     --accent-foreground: 0 0% 100%;
     --accent-light: 174 72% 85%;
-    
+
     /* Surfaces */
     --card: 0 0% 100%;
     --card-foreground: 225 15% 20%;
     --card-hover: 217 100% 97%;
-    
+
     --popover: 0 0% 100%;
     --popover-foreground: 225 15% 20%;
-    
+
     /* Status Colors */
     --success: 142 76% 36%;
     --warning: 38 92% 50%;
     --error: 0 84% 60%;
     --info: 199 89% 48%;
-    
+
     /* Priority Colors */
     --priority-critical: 0 84% 60%;
     --priority-high: 25 95% 53%;
     --priority-medium: 38 92% 50%;
     --priority-low: 142 76% 36%;
     --priority-none: 210 20% 70%;
-    
+
     /* Neutral Grays */
     --muted: 210 40% 96%;
     --muted-foreground: 215 16% 47%;
     --border: 214 32% 91%;
     --input: 214 32% 91%;
     --ring: 217 91% 60%;
-    
+
     /* Interactive States */
     --hover: 217 100% 97%;
     --active: 217 100% 94%;
-    
+
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(259 94% 51%));
     --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(174 72% 56%));
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(217 100% 99%));
-    
+
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
     --shadow: 0 4px 6px -1px hsl(0 0% 0% / 0.1);
     --shadow-md: 0 10px 15px -3px hsl(0 0% 0% / 0.1);
     --shadow-lg: 0 20px 25px -5px hsl(0 0% 0% / 0.1);
     --shadow-glow: 0 0 20px hsl(217 91% 60% / 0.3);
-    
+
     /* Animations */
     --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
     --transition-normal: 200ms cubic-bezier(0.4, 0, 0.2, 1);
     --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+
     --radius: 0.75rem;
     --radius-sm: 0.5rem;
     --radius-lg: 1rem;
@@ -82,40 +82,40 @@
   .dark {
     --background: 224 71% 4%;
     --foreground: 213 31% 91%;
-    
+
     --primary: 217 91% 60%;
     --primary-foreground: 0 0% 100%;
     --primary-light: 217 91% 25%;
     --primary-dark: 217 91% 75%;
-    
+
     --secondary: 259 94% 51%;
     --secondary-foreground: 0 0% 100%;
     --secondary-light: 259 94% 25%;
-    
+
     --accent: 174 72% 56%;
     --accent-foreground: 0 0% 100%;
     --accent-light: 174 72% 25%;
-    
+
     --card: 224 71% 6%;
     --card-foreground: 213 31% 91%;
     --card-hover: 224 71% 8%;
-    
+
     --popover: 224 71% 6%;
     --popover-foreground: 213 31% 91%;
-    
+
     --muted: 215 28% 17%;
     --muted-foreground: 217 11% 65%;
     --border: 215 28% 17%;
     --input: 215 28% 17%;
     --ring: 217 91% 60%;
-    
+
     --hover: 224 71% 8%;
     --active: 224 71% 10%;
-    
+
     --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(259 94% 51%));
     --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(174 72% 56%));
     --gradient-card: linear-gradient(145deg, hsl(224 71% 6%), hsl(224 71% 8%));
-    
+
     --shadow-glow: 0 0 20px hsl(217 91% 60% / 0.2);
   }
 }

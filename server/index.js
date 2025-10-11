@@ -14,7 +14,7 @@ const metricsMiddleware = promBundle({
   includeMethod: true,
   includePath: true,
   includeDefaultMetrics: true,
-  customLabels: { app: "kanban-board" },
+  customLabels: { app: "kanban-flowmate" },
 });
 app.use(metricsMiddleware);
 app.use(express.json());
@@ -54,7 +54,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(
-    `🚀 Professional Kanban Board running at http://localhost:${port}`
-  );
+  console.log(`🚀 Kanban FlowMate running at http://localhost:${port}`);
 });

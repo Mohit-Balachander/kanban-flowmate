@@ -1,5 +1,5 @@
 # --- Stage 1: Build the React Frontend ---
-# This stage's only job is to compile your professional React code.
+# This stage compiles the React application for production.
 FROM node:18-alpine AS frontend-builder
 WORKDIR /app
 
@@ -12,9 +12,9 @@ RUN npm ci
 # Copy the rest of the frontend source code and config files
 COPY . .
 
-# Run the build script to create the final website
+# Run the build script to create the production build
 RUN npm run build
-# The result is a finished website in the /app/dist folder.
+# The result is a production-ready build in the /app/dist folder.
 
 
 # --- Stage 2: Prepare the Node.js Backend ---
@@ -25,7 +25,7 @@ RUN npm ci --only=production
 
 
 # --- Stage 3: The Final, Production Image ---
-# This is the small, final image that will be run.
+# This is the optimized, production image.
 FROM node:18-alpine
 WORKDIR /app
 
@@ -34,7 +34,7 @@ COPY --from=backend-builder /app/node_modules ./node_modules
 COPY server/index.js .
 COPY board-data.json .
 
-# Copy the finished website from the frontend stage into a 'public' folder.
+# Copy the production build from the frontend stage into a 'public' folder.
 COPY --from=frontend-builder /app/dist ./public
 
 EXPOSE 8080

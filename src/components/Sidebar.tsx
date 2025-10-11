@@ -96,7 +96,9 @@ export function Sidebar({
       {/* Header */}
       <div className="p-4 border-b border-border">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-semibold text-foreground">ProjectFlow</h2>
+          <h2 className="text-lg font-semibold text-foreground">
+            Kanban FlowMate
+          </h2>
           <button
             onClick={onToggle}
             className="lg:hidden p-1 hover:bg-hover rounded-md"

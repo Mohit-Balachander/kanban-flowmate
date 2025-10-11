@@ -1,4 +1,4 @@
-# Kanban Board with Docker + Grafana Integration
+# Kanban FlowMate - Integration Guide
 
 This project combines a modern React-based Kanban board with Docker containerization and Grafana monitoring.
 
@@ -12,6 +12,7 @@ Frontend (React/Vite) → Backend (Node.js/Express) → Monitoring (Prometheus +
 ## 🚀 Quick Start
 
 ### Development Mode
+
 ```bash
 # Install dependencies
 npm install
@@ -23,20 +24,21 @@ chmod +x start-dev.sh
 ```
 
 ### Production Mode (Docker)
+
 ```bash
 # Build and start all services
 docker-compose up --build
 
 # Access the application
 # - Kanban Board: http://localhost:8080
-# - Prometheus: http://localhost:9090  
+# - Prometheus: http://localhost:9090
 # - Grafana: http://localhost:3000 (admin/admin)
 ```
 
 ## 📁 Project Structure
 
 ```
-kanban-flowmate-42/
+kanban-flowmate/
 ├── src/                    # React frontend source
 │   ├── components/         # UI components
 │   ├── hooks/             # Custom React hooks
@@ -57,6 +59,7 @@ kanban-flowmate-42/
 ## 🔧 Features
 
 ### Frontend (React)
+
 - ✅ Modern Kanban board with drag & drop
 - ✅ Multiple views (Board, Calendar, List)
 - ✅ Advanced card features (subtasks, time tracking, tags)
@@ -64,12 +67,14 @@ kanban-flowmate-42/
 - ✅ Responsive design with dark/light themes
 
 ### Backend (Node.js)
+
 - ✅ RESTful API for CRUD operations
 - ✅ File-based data persistence
 - ✅ Prometheus metrics integration
 - ✅ CORS support for development
 
 ### Monitoring (Prometheus + Grafana)
+
 - ✅ Application performance metrics
 - ✅ HTTP request monitoring
 - ✅ Custom dashboards
@@ -78,17 +83,20 @@ kanban-flowmate-42/
 ## 🛠️ Development
 
 ### Frontend Development
+
 ```bash
 npm run dev  # Start React dev server (port 5173)
 ```
 
 ### Backend Development
+
 ```bash
 cd server
 node index.js  # Start Node.js server (port 8080)
 ```
 
 ### Building for Production
+
 ```bash
 npm run build  # Build React app to dist/
 ```
@@ -115,10 +123,10 @@ The application is containerized and ready for production deployment:
 2. **Cloud Deployment**: Push to any Docker-compatible platform
 3. **Kubernetes**: Use the Docker images as base for K8s deployments
 
-## 🎯 What's Integrated
+## 🎯 Features Overview
 
-✅ **Original Features**: All Docker + Grafana monitoring capabilities preserved  
-✅ **New Features**: Modern React UI with advanced Kanban functionality  
-✅ **Seamless Integration**: Frontend communicates with existing backend API  
+✅ **Modern UI**: React-based interface with advanced Kanban functionality  
+✅ **Monitoring**: Docker + Grafana + Prometheus integration  
+✅ **API Integration**: Frontend communicates with backend API  
 ✅ **Production Ready**: Multi-stage Docker build optimized for deployment  
-✅ **Development Friendly**: Hot reload for frontend, nodemon for backend
+✅ **Development Friendly**: Hot reload for frontend, live updates for backend
