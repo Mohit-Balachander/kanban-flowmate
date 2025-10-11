@@ -1,5 +1,5 @@
+# Kanban FlowMate 🚀
 
-<<<<<<< HEAD
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
@@ -23,16 +23,15 @@ The primary objective is to provide a comprehensive, out-of-the-box system where
 
 The system is built on a modular, containerized architecture composed of three main pillars:
 
-- **Frontend Application**: A dynamic and responsive user interface built with **React**, **TypeScript**, and **Vite**.
+* **Frontend Application**: A dynamic and responsive user interface built with **React**, **TypeScript**, and **Vite**.
 
-- **Backend Service**: A lightweight and efficient API server powered by **Node.js** and **Express**, responsible for data persistence and metric exposition.
+* **Backend Service**: A lightweight and efficient API server powered by **Node.js** and **Express**, responsible for data persistence and metric exposition.
 
-- **Monitoring Stack**: An integrated observability suite containerized with **Docker**, featuring:
-  - **Prometheus**: For time-series data collection and alerting.
-  - **Grafana**: For advanced data visualization and dashboarding.
+* **Monitoring Stack**: An integrated observability suite containerized with **Docker**, featuring:
+    * **Prometheus**: For time-series data collection and alerting.
+    * **Grafana**: For advanced data visualization and dashboarding.
+
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-=======
->>>>>>> d1bad466e5406e7b2e054f41e1974c7869b1e6b5
