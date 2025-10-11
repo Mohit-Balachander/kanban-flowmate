@@ -1,0 +1,24 @@
+# Dependencies - VERY IMPORTANT
+/node_modules
+/server/node_modules
+
+# Build output folder for React/Vite
+/dist
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+
+# IDE and OS specific files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.DS_Store

@@ -1,0 +1,9 @@
+{
+  "annotations": { "list": [] }, "editable": true, "panels": [
+    { "id": 1, "gridPos": { "h": 8, "w": 12, "x": 0, "y": 0 }, "type": "stat", "title": "Total Homepage Visits", "datasource": { "type": "prometheus", "uid": "Prometheus" }, "targets": [ { "expr": "homepage_visits_total", "refId": "A" } ] },
+    { "id": 2, "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 }, "type": "timeseries", "title": "Visits Per Minute", "datasource": { "type": "prometheus", "uid": "Prometheus" }, "targets": [ { "expr": "rate(homepage_visits_total[1m])", "interval": "15s", "refId": "A" } ] },
+    { "id": 3, "gridPos": { "h": 8, "w": 12, "x": 0, "y": 8 }, "type": "timeseries", "title": "Event Loop Lag", "datasource": { "type": "prometheus", "uid": "Prometheus" }, "fieldConfig": { "defaults": { "unit": "ms" } }, "targets": [ { "expr": "nodejs_eventloop_lag_seconds * 1000", "refId": "A" } ] },
+    { "id": 4, "gridPos": { "h": 8, "w": 12, "x": 12, "y": 8 }, "type": "timeseries", "title": "CPU Usage", "datasource": { "type": "prometheus", "uid": "Prometheus" }, "fieldConfig": { "defaults": { "unit": "percent" } }, "targets": [ { "expr": "rate(process_cpu_user_seconds_total[1m])", "interval": "15s", "refId": "A" } ] }
+  ],
+  "refresh": "10s", "time": { "from": "now-1h", "to": "now" }, "timezone": "browser", "title": "Simple App Monitoring", "uid": "simple-app-dashboard"
+}

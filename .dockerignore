@@ -1,0 +1,30 @@
+# Ignore development files
+node_modules
+npm-debug.log
+.git
+.gitignore
+README.md
+.env
+.nyc_output
+coverage
+.nyc_output
+.vscode
+.idea
+
+# Ignore build artifacts that will be created in container
+dist
+build
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+logs
+*.log
+
+# Ignore development config
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
