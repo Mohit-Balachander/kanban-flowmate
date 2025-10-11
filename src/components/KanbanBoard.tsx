@@ -1,4 +1,4 @@
-import { useState } from "react";
+src/components/KanbanBoard.tsximport { useState } from "react";
 import { Project, Card } from "@/types/project";
 import { KanbanColumn } from "./KanbanColumn";
 import { CardModal } from "./CardModal";
@@ -37,7 +37,7 @@ export function KanbanBoard({ project }: KanbanBoardProps) {
 
     const { draggableId, destination } = result;
     const card = project.cards.find(c => c.id === draggableId);
-    
+
     if (card && destination.droppableId !== card.columnId) {
       updateCard(draggableId, { 
         columnId: destination.droppableId,
