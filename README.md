@@ -1,5 +1,5 @@
-# Kanban FlowMate 🚀
 
+<<<<<<< HEAD
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
@@ -34,3 +34,5 @@ The system is built on a modular, containerized architecture composed of three m
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+=======
+>>>>>>> d1bad466e5406e7b2e054f41e1974c7869b1e6b5
