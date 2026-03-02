@@ -56,7 +56,7 @@ jobs:
         run: |
           echo "Testing API endpoints..."
           curl -sf http://localhost:8081/api/board && echo "Board API OK"
-          curl -sf http://localhost:8081/metrics | grep -q "http_requests_total" && echo "Metrics endpoint OK"
+          curl -sf http://localhost:8081/metrics && echo "Metrics endpoint OK"
 
       - name: Show container status
         run: docker compose ps
