@@ -1,4 +1,4 @@
-src/components/KanbanBoard.tsximport { useState } from "react";
+import { useState } from "react";
 import { Project, Card } from "@/types/project";
 import { KanbanColumn } from "./KanbanColumn";
 import { CardModal } from "./CardModal";
