@@ -1,0 +1,22 @@
+FROM node:18-alpine
+WORKDIR /app
+
+# Frontend deps + build (keeps full build toolchain in final image on purpose)
+COPY package.json package-lock.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
+
+# Backend deps (installed at /app/node_modules like the multi-stage image)
+COPY server/package.json server/package-lock.json /app/
+RUN npm ci --only=production
+
+# Align runtime layout with the production image
+RUN cp server/index.js /app/index.js \
+  && cp board-data.json /app/board-data.json \
+  && rm -rf /app/public \
+  && cp -r /app/dist /app/public
+
+EXPOSE 8080
+CMD ["node", "index.js"]
+
